@@ -13,6 +13,8 @@ Open-source application of faults detection in 2D seismic images using yoloV11 s
 2. Install necessary dependencies
     ```
     pip install -r requirements.txt
+    cd client
+    npm install --force
     ```
 
 ## Run application
@@ -22,9 +24,9 @@ Open-source application of faults detection in 2D seismic images using yoloV11 s
     python src/server.py
     ```
 
-2. on new terminal, launch application
+2. On new terminal, launch client application
     ```
-    npm run install
+    cd client
     npm run dev
     ```
 
