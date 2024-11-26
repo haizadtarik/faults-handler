@@ -5,10 +5,10 @@ Open-source application of faults detection in 2D seismic images using yoloV11 s
 ## Setup
 
 1. Clone this repository
-    """
+    ```
     git clone https://github.com/haizadtarik/faults-handler.git
     cd faults-handler
-    """
+    ```
 
 2. Install necessary dependencies
     ```
