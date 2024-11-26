@@ -22,7 +22,11 @@ Open-source application of faults detection in 2D seismic images using yoloV11 s
     python src/server.py
     ```
 
-2. Launch application
+2. on new terminal, launch application
+    ```
+    npm run install
+    npm run dev
+    ```
 
 ## Train on Your Own Data
 
