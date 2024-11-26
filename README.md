@@ -1,6 +1,6 @@
 # Faults Handler
 
-Open-source application of faults detection in 2D seismic images using yoloV11 segmentation model.
+Open-source application of faults detection in 2D seismic images using YOLO11 segmentation model.
 
 ## Setup
 
@@ -29,6 +29,8 @@ Open-source application of faults detection in 2D seismic images using yoloV11 s
     cd client
     npm run dev
     ```
+
+3. Go to [http://localhost:3000](http://localhost:3000) and upload your 2D seismic images to identify the faults
 
 ## Train on Your Own Data
 
