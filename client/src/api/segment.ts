@@ -4,7 +4,7 @@ import ky from "ky";
 const API_URL =
   process.env.NODE_ENV === "production"
     ? "https://b32f-52-163-94-151.ngrok-free.app"
-    : "https://b32f-52-163-94-151.ngrok-free.app";
+    : "http://localhost:8080";
 
 // Define a TypeScript type for the API response
 type UploadResponse = {

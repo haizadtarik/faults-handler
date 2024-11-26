@@ -104,8 +104,8 @@ const ImageSlideshowModal: React.FC<ImageSlideshowModalProps> = ({
     e.preventDefault();
   };
 
-  const handleTouchDown: TouchEventHandler<HTMLCanvasElement> = (e: as TouchEvent) =>
-    handleMouseDown(e as TouchEvent);
+  const handleTouchDown: TouchEventHandler<HTMLCanvasElement> = (e) =>
+    handleMouseDown(e);
 
   const handleMouseMove = (e: MouseEvent | TouchEvent) => {
     if (!isDrawing) return;

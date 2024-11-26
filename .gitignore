@@ -169,7 +169,7 @@ runs/
 *data*/
 
 # dependencies
-/client/node_modules
+client/node_modules
 /.pnp
 .pnp.*
 .yarn/*
@@ -182,7 +182,7 @@ runs/
 /coverage
 
 # next.js
-/.next/
+.next/
 /out/
 
 # production
