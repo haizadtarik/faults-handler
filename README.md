@@ -1,6 +1,8 @@
 # Faults Handler
 
-Open-source application of faults detection in 2D seismic images using YOLO11 segmentation model.
+Faults—fractures within the Earth's crust—play a crucial role in the migration and trapping of hydrocarbons. They can either facilitate the movement of hydrocarbons into reservoirs or act as barriers that impede their flow. Accurate identification and interpretation of these faults are essential for geologists involved in oil and gas exploration. In three-dimensional (3D) seismic data, faults are relatively easier to interpret due to the continuous spatial coverage across the area of interest. However, in frontier exploration areas, geologists often have access only to two-dimensional (2D) seismic data, which consists of discrete inline and crossline sections. This lack of continuity makes it challenging to identify and correlate the same fault structures across different 2D lines, especially in regions with complex faulting.
+
+This project aims to address these challenges by developing open-source web application for effective fault detection in 2D seismic images using AI model. Currently, the application run using YOLOv11 segmentation model
 
 ## Setup
 
@@ -38,7 +40,7 @@ Data need to be in yolo format. For more details, refer [here](https://docs.ultr
 
 To generate labels file from mask images, use function `create_yolo_segmentation_labels_from_directory` in `util.py`
 
-To train modify configuration in `config/seismic_data.yaml` and run:
+To train modify configuration in `config/seismic_data.yaml` and `train.py` and run:
 ```
 python src/train.py
 ```
