@@ -166,7 +166,11 @@ runs/
 *.pt
 
 # data
-*data*/
+*.jpg
+*.png
+*.npy
+*.dat
+*.segy
 
 # dependencies
 client/node_modules
@@ -206,3 +210,12 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# git submodules
+osv/
+cigvis/
+
+# input/output
+data/
+outputs/
+model/
