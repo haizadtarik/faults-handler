@@ -66,35 +66,38 @@ pip install -e ".[all]" --config-settings editable_mode=compat
 
 2. Train unet model
 
-    a. Download synthetic data from [here](https://drive.google.com/drive/folders/1FcykAxpqiy2NpLP1icdatrrSQgLRXLP8)
-    b. Create data directory and arrange the downloaded data like below:
-        ```
+   a. Download synthetic data from [here](https://drive.google.com/drive/folders/1FcykAxpqiy2NpLP1icdatrrSQgLRXLP8)
+
+   b. Create data directory and arrange the downloaded data like below:
+
+   ```
         data
         |--train
-        |--fault
-            |--0.dat
-            |-- ...
-            |--199.dat
-        |--seis
-            |--0.dat
-            |-- ...
-            |--199.dat
+            |--fault
+                |--0.dat
+                |-- ...
+                |--199.dat
+            |--seis
+                |--0.dat
+                |-- ...
+                |--199.dat
         |--validation
-        |--fault
-            |--0.dat
-            |-- ...
-            |--19.dat
-        |--seis
-            |--0.dat
-            |-- ...
-            |--19.dat
-        ```
-    b. Run the following command:
+            |--fault
+                |--0.dat
+                |-- ...
+                |--19.dat
+            |--seis
+                |--0.dat
+                |-- ...
+                |--19.dat
+   ```
+
+   c. Run the following command:
     ```
     python src/unet3d/train.py
     ```
 
-3. Go through the notebook [here](notebook/unet_osv.ipynb) to run inference using U-Net + OSV
+4. Go through the notebook [here](notebook/unet_osv.ipynb) to run inference using U-Net + OSV
 
 ## References
 1. [Faultseg](https://github.com/xinwucwp/faultSeg)
